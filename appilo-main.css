@@ -700,7 +700,80 @@ h1 {
     width: 13rem;
 }
 
+/* SECTION 4 text/icons */
 
+.section4-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-container {
+    display: flex;
+    height: 5rem;
+}
+
+.inside-gap {
+    display: flex;
+    width: 15%;
+}
+
+.header-row-container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.section4-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.section4-text-container>h3 {
+    font-size: 3rem;
+}
+
+.header-row-container>h3 {
+    font-size: 3rem;
+}
+
+.header-row-container>p {
+    font-size: 3rem;
+}
+
+.column-icon-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 3rem;
+}
+
+.icon-text-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.icon-size2 {
+    height: 100px;
+    width: 100px;
+}
+
+.p-container {
+    width: 80%;
+}
+
+.text-flex-container-column>h3 {
+    font-size: 1.8rem;
+}
+
+.text-flex-container-column>p {
+    width: 110%;
+}
 
 
 /*  ----------------- GRID-CONTAINER SECTION2 -------------- */

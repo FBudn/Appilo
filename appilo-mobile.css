@@ -247,7 +247,24 @@
         width: 90%;
     }
 
-    /*  ----------------- TOP BAR -------------- */
+    /*  ----------------- SECTION 4 -------------- */
+
+    .inside-gap {
+        display: none;
+    }
+
+    .section4-flex-container {
+        flex-direction: column;
+        gap: 5rem;
+        margin-left: 2rem;
+    }
+
+    .section4-text-container {
+        width: 100%;
+    }
+
+
+
 
     /* ****** Drop Down Menu ****** */
 
@@ -397,6 +414,32 @@
         display: flex;
         width: 95%;
         justify-content: flex-end;
+    }
+
+    /*  ----------------- SECTION 4 -------------- */
+
+    .inside-gap {
+        display: none;
+    }
+
+    .section4-flex-container {
+        flex-direction: column;
+        gap: 5rem;
+        margin-left: 0rem;
+    }
+
+    .section4-text-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .section4-text-container>h3 {
+        text-align: center;
+    }
+
+    .icon-text-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     /* ****** Drop Down Menu ****** */
