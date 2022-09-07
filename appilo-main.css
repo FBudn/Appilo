@@ -642,10 +642,64 @@ h1 {
 
 .section3-flex-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5rem solid transparent;
+    gap: 6rem;
+    background: linear-gradient(85deg, #ffffff, #8d7f95);
 }
+
+
+
+.text-img-section3-size {
+    height: 60px;
+    width: 60px;
+}
+
+.row-flex-container {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.text-flex-container-column {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1.5rem;
+}
+
+.text-flex-container-column>h3 {
+    font-size: 3rem;
+}
+
+.text-flex-container-column>p {
+    font-size: 1.20rem;
+    width: 100%;
+}
+
+.text-flex-container-column>a {
+    font-size: 1.20rem;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+.text-flex-container-column>a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 153, 255);
+    display: flex;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0.3rem;
+}
+
+.text-flex-container-column>a:hover::after {
+    width: 13rem;
+}
+
 
 
 

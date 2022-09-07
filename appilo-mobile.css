@@ -224,8 +224,27 @@
     }
 
     .grid-container-tiles {
-        display: flex;
+        display: grid;
+        grid-template-areas:
+            'tiles1 tiles2'
+            'tiles3 tiles4'
+            'tiles5 tiles6';
+        width: 90%;
+        text-align: center;
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* ****** SECTION 3 ****** */
+    .row-flex-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .text-flex-container-column {
+        width: 90%;
     }
 
     /*  ----------------- TOP BAR -------------- */
@@ -350,6 +369,34 @@
     .first-child-buttons-area-style {
         height: 40px;
         width: 130px;
+    }
+
+
+    /* ****** SECTION 2 ****** */
+    .first-child-services-area {
+        width: 60%;
+        height: 30px;
+    }
+
+    .h2-section2 {
+        font-size: 25px;
+    }
+
+    .facilites-style {
+        font-size: 35px;
+    }
+
+    .grid-container-tiles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  ----------------- SECTION3 -------------- */
+
+    .px-mobile {
+        display: flex;
+        width: 95%;
+        justify-content: flex-end;
     }
 
     /* ****** Drop Down Menu ****** */
