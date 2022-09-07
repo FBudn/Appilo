@@ -775,6 +775,122 @@ h1 {
     width: 110%;
 }
 
+/* SECTION 5 one-picture/tekst */
+.section5-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(85deg, #ffffff, #8d7f95);
+}
+
+.section5-grid-container-in-flex {
+    display: grid;
+    grid-template-areas:
+        'gap1 gap1'
+        'picture text'
+        'gap2 gap2';
+}
+
+.section5-grid-areas {
+    display: flex;
+}
+
+.gap1 {
+    grid-area: gap1;
+    height: 5rem;
+}
+
+.section5-picture-container {
+    grid-area: picture;
+    justify-content: flex-end;
+}
+
+.section5-text-container {
+    grid-area: text;
+    justify-content: flex-start;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73299a;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #c6c2c2;
+    width: 55%;
+}
+
+.flex-column2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.p-section5-style {
+    display: flex;
+    font-size: 1.rem;
+    text-align: start;
+    justify-content: flex-start;
+}
+
+.flex-column2>a {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: black;
+    text-decoration: none;
+}
+
+.flex-column2>a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 153, 255);
+    display: flex;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0.3rem;
+}
+
+.flex-column2>a:hover::after {
+    width: 14rem;
+}
+
+.gap2 {
+    grid-area: gap2;
+    height: 5rem;
+}
+
+
+/* SECTION 6 header and members */
+
+.section6-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section6-tiles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles1;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: 12rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
 
 /*  ----------------- GRID-CONTAINER SECTION2 -------------- */
 

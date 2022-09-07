@@ -263,6 +263,33 @@
         width: 100%;
     }
 
+    /*  ----------------- SECTION 5 -------------- */
+
+
+    .section5-grid-container-in-flex {
+        grid-template-areas:
+            'gap1 gap1'
+            'picture picture'
+            'text text'
+            'gap2 gap2';
+    }
+
+    #section5-h2 {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+    }
+
+    #tool {
+        width: 180%;
+    }
+
+    .flex-start {
+        width: 100%;
+    }
+
+
+
 
 
 
@@ -440,6 +467,30 @@
     .icon-text-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    /*  ----------------- SECTION 5 -------------- */
+
+    .section5-flex-container {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #section5-icons {
+        display: flex;
+        width: 90%;
+    }
+
+    #section5-h2 {
+        width: 150%;
+    }
+
+    #tool {
+        width: 200%;
+    }
+
+    .flex-start {
+        width: 100%;
     }
 
     /* ****** Drop Down Menu ****** */
