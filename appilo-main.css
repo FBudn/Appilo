@@ -233,29 +233,43 @@ li>a {
 }
 
 /*  ----------------- GRID-CONTAINER-SECTION 1 -------------- */
-.grid-container-section1 {
+.grid-container-section1-inside-flex-container {
     display: grid;
     grid-template-areas:
         'empty1 empty1'
         'column1 column2'
         'empty2 empty2';
     text-align: center;
-    background-color: #73299a;
+    background: linear-gradient(90deg, #ffffff, #73299a);
     width: 100%;
+}
+
+.section1-flex-container {
+    display: flex;
+    justify-content: center;
 }
 
 .section1-grid-child1 {
     grid-area: column1;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .section1-grid-child2 {
     grid-area: column2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
+
+.img-section1-grid-child2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 2rem;
+}
+
 
 .section1-grid-child3 {
     grid-area: empty1;
@@ -267,8 +281,373 @@ li>a {
     height: 5rem;
 }
 
+/* ****** SECTION1 FIRST CHILD INSIDE SECTION (GRID)****** */
+.first-child-inside-section-grid {
+    display: grid;
+    grid-template-areas:
+        'creative'
+        'h1'
+        'p'
+        'buttons'
+        'credit';
+    text-align: start;
+    width: 100%;
+    height: 70%;
+    row-gap: 1rem;
+    padding-left: 8rem;
+}
 
-/* ****** Drop Down Menu ****** */
+
+/* .first-child-inside-section-flex-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+} */
+
+.first-child-creative-area {
+    grid-area: creative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73299a;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #c6c2c2;
+    width: 35%;
+    height: 100%;
+}
+
+
+/* H1 AREA START*/
+.first-child-h1-area {
+    grid-area: h1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 5rem;
+}
+
+.row-flex-gap {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.h1style {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.SAAS-style {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+/* H1 AREA STOP*/
+
+/* P AREA*/
+.first-child-p-area {
+    grid-area: p;
+    display: flex;
+}
+
+.p-style {
+    font-size: 1.5rem;
+    width: 75%;
+}
+
+/* P AREA stop*/
+
+/* Buttons area*/
+.first-child-buttons-area {
+    grid-area: buttons;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.first-child-buttons-area-style {
+    background: transparent;
+    border: 1px solid #73299a;
+    border-radius: 2rem;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.button-icon-gap {
+    margin-right: 5px;
+}
+
+.first-child-buttons-area-style:hover {
+    background-color: #73299a;
+}
+
+
+.first-child-credit-area {
+    grid-area: credit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*  ----------------- GRID-CONTAINER SECTION2 -------------- */
+
+.grid-container-section2 {
+    display: grid;
+    grid-template-areas:
+        'zero'
+        'one'
+        'middle'
+        'four'
+        'five';
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.section2-grid-container-child0 {
+    display: flex;
+    grid-area: zero;
+    height: 2rem;
+}
+
+/*FOR GAP*/
+
+/* 1 CHILD STYLES --------------*/
+
+.section2-grid-container-child1 {
+    display: flex;
+    justify-content: center;
+    grid-area: one;
+}
+
+.first-child-services-area {
+    grid-area: creative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73299a;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #c6c2c2;
+    width: 15%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.h2-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+.facilites-style {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 100;
+    font-size: 40px;
+    height: 100%;
+}
+
+/* 2 CHILD STYLES --------------*/
+
+.section2-grid-container-child2 {
+    display: flex;
+    grid-area: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container-tiles {
+    display: grid;
+    grid-template-areas:
+        'tiles1 tiles2 tiles3'
+        'tiles4 tiles5 tiles6';
+    width: 80%;
+    text-align: center;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-container-tiles>:nth-child(1)>h3,
+:nth-child(2)>h3,
+:nth-child(3)>h3,
+:nth-child(4)>h3,
+:nth-child(5)>h3,
+:nth-child(6)>h3 {
+    font-size: 1.5rem;
+}
+
+
+.p-tiles-style {
+    text-align: start;
+    width: 80%;
+}
+
+.tiles1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles1;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: 12rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+
+.tiles2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles2;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 12rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+.tiles3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles3;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 12rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+.tiles4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles4;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    height: 12rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+.tiles5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles5;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 12rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+.tiles6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: tiles6;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 12rem;
+    box-shadow: 10px 10px 10px 10px #e6e6e8;
+}
+
+
+
+/* 4 CHILD STYLES --------------*/
+.section2-grid-container-child4 {
+    display: flex;
+    grid-area: four;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-grid-container-child4>a {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: black;
+    text-decoration: none;
+}
+
+.section2-grid-container-child4>a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(26, 10, 244);
+    display: flex;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0.3rem;
+}
+
+.section2-grid-container-child4>a:hover::after {
+    width: 14rem;
+}
+
+
+/*FOR GAP*/
+.section2-grid-container-child5 {
+    display: flex;
+    grid-area: five;
+    height: 5rem;
+}
+
+
+/* SECTION 3 PICTURES WITH HEADERS */
+
+.section3-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5rem solid transparent;
+}
+
+
 
 /*  ----------------- GRID-CONTAINER SECTION2 -------------- */
 
