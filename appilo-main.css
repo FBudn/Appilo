@@ -1,0 +1,304 @@
+/*                                    CSS FOR 1140 WIDTH                                                       */
+
+/*                                                                        General classes and settings */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.center-withflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-dark-color-bold {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*                                                                                        HEADER                                                                   */
+/*     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #2c3e50;
+    background-color: #fff !important;
+}
+
+.header-container {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-fixed-position {
+    position: fixed;
+    top: 0%;
+}
+
+/*  ----------------- TOP BAR -------------- */
+
+.header-logo-container-widht {
+    width: 15%;
+}
+
+.header-logo-img {
+    max-height: 38px;
+}
+
+/*  ----------------- HEADER NAV -------------- */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li>a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/* Here: limited hover to larger screens */
+@media screen and (min-width: 769px) {
+    li>a:hover {
+        color: rgb(199, 81, 192);
+        transition: 0.3s all ease-in-out;
+    }
+
+
+    .a-dark-color-bold::after {
+        content: "";
+        width: 0;
+        height: 1.5px;
+        background-color: rgb(199, 81, 192);
+        display: flex;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        margin-top: 0.3rem;
+    }
+
+    .a-dark-color-bold:hover::after {
+        width: 3.5rem;
+    }
+
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    border: 0px;
+    color: #fff !important;
+    background-color: #73299a !important;
+    width: 160px;
+    height: 50px;
+    font-size: 1rem;
+    line-height: 60px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* "NEW" sign */
+#a-new {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+#new {
+    background-color: #ff523d;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+    height: 25px;
+    width: 40px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  ----------------- DROP-DOWN MENU -------------- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu-logo {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 65rem;
+    margin-left: -45rem;
+    background-color: #fff !important;
+    border-bottom: 3px solid hsl(0, 8%, 93%);
+    border: 1px solid hsl(0, 8%, 93%);
+    border-radius: 1rem;
+}
+
+.dropdown-content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dropdown-content-container-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #2c3e50;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 510;
+}
+
+/* Here: limited hover to larger screens - becouse it's blocking java-script drop-down */
+@media screen and (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+}
+
+.dropdown-content a:hover {
+    color: #c44d58 !important;
+}
+
+.dropdown-content-column>h6 {
+    font-size: 18px;
+}
+
+
+/*  ----------------- RESPONSIVE MENU -------------- */
+
+.burger {
+    display: none;
+}
+
+.burger-lines {
+    width: 25px;
+    height: 4px;
+    background-color: #73299a;
+    margin-top: 5px;
+}
+
+.burger-lines:nth-child(4) {
+    display: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*                                                                                         MAIN                                                                   */
+/*     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*  ----------------- GAP BETWEEN TOP-BAR AND <MAIN> -------------- */
+.gap-container-flex {
+    display: flex;
+    height: 5rem;
+}
+
+/*  ----------------- GRID-CONTAINER-SECTION 1 -------------- */
+.grid-container-section1 {
+    display: grid;
+    grid-template-areas:
+        'empty1 empty1'
+        'column1 column2'
+        'empty2 empty2';
+    text-align: center;
+    background-color: #73299a;
+    width: 100%;
+}
+
+.section1-grid-child1 {
+    grid-area: column1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section1-grid-child2 {
+    grid-area: column2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-grid-child3 {
+    grid-area: empty1;
+    height: 8rem;
+}
+
+.section1-grid-child4 {
+    grid-area: empty2;
+    height: 5rem;
+}
+
+
+/* ****** Drop Down Menu ****** */
+
+/*  ----------------- GRID-CONTAINER SECTION2 -------------- */
+
+.grid-container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        'one';
+    background: green;
+    border: 2px solid yellow;
+}
+
+.section2-grid-child1 {
+    grid-area: one;
+    background: green;
+}
+
+/* ****** Drop Down Menu ****** */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*                                                                                        FOOTER                                                                   */
+/*     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*  ----------------- TOP BAR -------------- */
+
+/* ****** Drop Down Menu ****** */
+
+/*  ----------------- TOP BAR -------------- */
+
+/* ****** Drop Down Menu ****** */
+
+/*  ----------------- TOP BAR -------------- */
