@@ -305,14 +305,13 @@
 
 
 
+    /* --------------------------  SECTION 8 prices tiles */
 
 
-
-    /* ****** Drop Down Menu ****** */
-
-    /*  ----------------- TOP BAR -------------- */
-
-    /* ****** Drop Down Menu ****** */
+    .flex-row-pricing-container {
+        flex-direction: column;
+        gap: 8rem;
+    }
 
 
 
@@ -322,11 +321,83 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-    /*  ----------------- TOP BAR -------------- */
+    /*  ----------------- FORM-------------- */
 
-    /* ****** Drop Down Menu ****** */
+    .img-form {
+        display: none;
+    }
 
-    /*  ----------------- TOP BAR -------------- */
+    .row-picture-subscribe {
+        width: 100%;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .flex-input-button {
+        width: 100%;
+    }
+
+    .input-style {
+        width: 400px;
+    }
+
+    .form-button-style {
+        width: 150px;
+    }
+
+
+    /*  ----------------- LINKS -------------- */
+
+    .links-container-row {
+        width: 100%;
+    }
+
+    .links-container-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-left: 1rem;
+    }
+
+    .links-newsletter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .column-input-container {
+        width: 100%;
+    }
+
+    .home-faqs-cont {
+        gap: 8rem;
+    }
+
+    #hr-links1 {
+        width: 650px;
+    }
+
+    #hr-links2 {
+        width: 600px;
+    }
+
+    #input-news {
+        width: 600px;
+    }
+
+    .column-logo-container3 {
+        width: 100%;
+    }
+
+    .gap-container-footer {
+        display: none;
+    }
+
+    .links-news-row {
+        flex-direction: column;
+    }
+
 
     /* ****** Drop Down Menu ****** */
 
@@ -518,6 +589,15 @@
     .flex-column-faqs {
         width: 90%;
     }
+
+    .frequently-asqed {
+        width: 60%;
+    }
+
+    /* --------------------------  SECTION 8 prices tiles */
+
+
+
 
     /* ****** Drop Down Menu ****** */
 
