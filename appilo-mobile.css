@@ -289,6 +289,21 @@
     }
 
 
+    /* --------------------------  SECTION 7 FAQs */
+
+    .flex-column-faqs {
+        width: 45%;
+    }
+
+    .header-button-flex-row {
+        align-items: flex-start;
+    }
+
+    .frequently-asqed {
+        width: 35%;
+    }
+
+
 
 
 
@@ -491,6 +506,17 @@
 
     .flex-start {
         width: 100%;
+    }
+
+    /* --------------------------  SECTION 7 FAQs */
+
+    .flex-row-faqs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-column-faqs {
+        width: 90%;
     }
 
     /* ****** Drop Down Menu ****** */

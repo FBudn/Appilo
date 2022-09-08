@@ -879,6 +879,19 @@ h1 {
     justify-content: center;
 }
 
+.flex-row-members {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.gap-container-members {
+    display: flex;
+    height: 10rem;
+}
+
 .section6-tiles {
     display: flex;
     flex-direction: column;
@@ -887,9 +900,118 @@ h1 {
     grid-area: tiles1;
     background-color: #ffffff;
     border-radius: 1rem;
-    height: 12rem;
-    padding: 2rem;
+    height: 10rem;
+    width: 15rem;
+    padding: 0.5rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 2rem;
+}
+
+.img-team {
+    display: block;
+    border-radius: 50%;
+}
+
+.img-to-border {
+    margin-top: -5rem;
+}
+
+.members-data-column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.flex-members-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0.2rem;
+    height: 5rem;
+    width: 100%;
+}
+
+/* --------------------------  SECTION 7 FAQs */
+
+.gap-container-faqs {
+    display: flex;
+    height: 5rem;
+    background-color: #c6c2c2;
+    width: 100%;
+}
+
+.section7-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6c2c2;
+}
+
+.frequently-asqed {
+    grid-area: creative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73299a;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 100%;
+    font-weight: bold;
+    background-color: pink;
+}
+
+.flex-row-faqs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.flex-column-faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 35%;
+}
+
+.header-button-flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button-flex-row>h6 {
+    font-size: 1.25rem;
+}
+
+.heaeder-p-flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.p-faqs {
+    width: 100%;
+    font-size: 1.1rem;
+    visibility: hidden;
+    height: 0px;
+}
+
+
+.button-faqs {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.showp {
+    visibility: inherit;
+    height: 100%;
 }
 
 /*  ----------------- GRID-CONTAINER SECTION2 -------------- */
@@ -908,6 +1030,10 @@ h1 {
     grid-area: one;
     background: green;
 }
+
+
+
+
 
 /* ****** Drop Down Menu ****** */
 
