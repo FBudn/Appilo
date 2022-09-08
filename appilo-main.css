@@ -776,7 +776,7 @@ h1 {
     width: 110%;
 }
 
-/* SECTION 5 one-picture/tekst */
+/* -------------------------------------- SECTION 5 one-picture/tekst */
 .section5-flex-container {
     display: flex;
     justify-content: center;
@@ -871,7 +871,7 @@ h1 {
 }
 
 
-/* SECTION 6 header and members */
+/* --------------------------------------------------- SECTION 6 header and members */
 
 .section6-flex-container {
     display: flex;

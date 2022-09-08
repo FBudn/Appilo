@@ -244,7 +244,7 @@
     }
 
     .text-flex-container-column {
-        width: 90%;
+        width: 80%;
     }
 
     /*  ----------------- SECTION 4 -------------- */
@@ -286,6 +286,17 @@
 
     .flex-start {
         width: 100%;
+    }
+
+    /* --------------------------  SECTION 6 MEMBERS */
+
+    .flex-row-members {
+        width: 90%;
+        gap: 1rem;
+    }
+
+    #liona {
+        display: none;
     }
 
 
@@ -396,6 +407,11 @@
 
     .links-news-row {
         flex-direction: column;
+    }
+
+    .gap-container-links {
+        width: 100%;
+        margin-left: 0;
     }
 
 
@@ -529,6 +545,7 @@
         justify-content: flex-end;
     }
 
+
     /*  ----------------- SECTION 4 -------------- */
 
     .inside-gap {
@@ -579,6 +596,11 @@
         width: 100%;
     }
 
+    /*  SECTION 6  */
+    #niofar {
+        display: none;
+    }
+
     /* --------------------------  SECTION 7 FAQs */
 
     .flex-row-faqs {
@@ -613,11 +635,34 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-    /*  ----------------- TOP BAR -------------- */
+    /*  ----------------- FORM -------------- */
+    .input-style {
+        width: 170px;
+    }
 
-    /* ****** Drop Down Menu ****** */
+    .form-button-style {
+        width: 75px;
+    }
 
-    /*  ----------------- TOP BAR -------------- */
+    .flex-input-button {
+        gap: 0;
+    }
+
+
+    /*  ----------------- LINKS -------------- */
+
+
+    #hr-links1 {
+        width: 300px;
+    }
+
+    #hr-links2 {
+        width: 250px;
+    }
+
+    #input-news {
+        width: 250px;
+    }
 
     /* ****** Drop Down Menu ****** */
 
