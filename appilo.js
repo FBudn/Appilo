@@ -13,6 +13,36 @@ dropdownLi.addEventListener("click", function () {
   dropDwn.classList.toggle("show");
 });
 
+/* BURGER X ICON */
+
+const dropBurger = document.querySelector(".burger-icon");
+const droP = document.querySelector("ul");
+const burgIc = document.querySelector(".burger");
+
+dropBurger.addEventListener("click", function () {
+  droP.classList.toggle("active");
+  burgIc.classList.toggle("active");
+});
+
+/* GO TO TOP BUTTON */
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 /* FAQs buttons */
 
 const FQSbutton = document.querySelector(".button-faqs");

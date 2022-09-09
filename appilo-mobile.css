@@ -80,40 +80,48 @@
 
     .burger.active .burger-lines:first-child {
         position: absolute;
-        transform: translateX(-438px);
+        transform: translateX(-555px);
         top: -25px;
         height: 100vh;
         width: 70vw;
         background-color: rgba(0, 0, 0, 0.827);
     }
 
+
     .burger.active .burger-lines:nth-child(2) {
-        transform: rotate(45deg);
+        display: none;
+        /*transform: rotate(45deg);
         margin-bottom: -5px;
         width: 20px;
         margin-left: 0px;
         transition: 0.3s ease-in;
         margin-right: 13rem;
         background-color: red;
+        */
     }
 
     .burger.active .burger-lines:nth-child(3) {
+        display: none;
+        /*
         transform: rotate(135deg);
         bottom: 5px;
         transition: 0.3s ease-in;
         margin-right: 13rem;
         background-color: red;
+        */
     }
 
-    .burger.active .burger-lines:nth-child(4) {
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        border: 2px solid red;
+    .burger-icon {
         display: flex;
-        background-color: transparent;
-        margin-right: 13rem;
+        width: 100%;
+        position: absolute;
+        top: 1rem;
+        margin-left: 2rem;
+        font-size: 20px;
+        color: red;
     }
+
+
 
 
 
@@ -130,10 +138,12 @@
         margin: 0;
         width: 100%;
         bottom: -53rem;
+        margin-left: -4rem;
     }
 
     .dropdown-content-container-row {
         flex-direction: column;
+        width: 100%;
     }
 
 
@@ -455,40 +465,36 @@
 
     .burger.active .burger-lines:first-child {
         position: absolute;
-        transform: translateX(-317px);
-        top: -25px;
-        height: 100vh;
+        transform: translateX(-435px);
+        height: 110vh;
         width: 70vw;
         background-color: rgba(0, 0, 0, 0.827);
     }
 
+
     .burger.active .burger-lines:nth-child(2) {
+        display: none;
+        /*
         transform: rotate(45deg);
         margin-bottom: -5px;
         width: 20px;
         margin-left: 0px;
         transition: 0.3s ease-in;
         margin-right: 13rem;
-        background-color: red;
+        background-color: red; */
+
     }
 
     .burger.active .burger-lines:nth-child(3) {
-        transform: rotate(135deg);
+        display: none;
+        /* transform: rotate(135deg);
         bottom: 5px;
         transition: 0.3s ease-in;
         margin-right: 13rem;
         background-color: red;
+        */
     }
 
-    .burger.active .burger-lines:nth-child(4) {
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        border: 2px solid red;
-        display: flex;
-        background-color: transparent;
-        margin-right: 13rem;
-    }
 
 
 
