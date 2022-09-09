@@ -20,6 +20,10 @@
     font-weight: bold;
 }
 
+
+
+
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /*                                                                                        HEADER                                                                   */
 /*     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -142,6 +146,18 @@ li>a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -5px;
+}
+
+#new-triangle {
+    position: absolute;
+    bottom: 41px;
+    margin-left: 25px;
+    width: 2px;
+    height: 3px;
+    border-style: solid;
+    border-width: 7px 3px 0px 0px;
+    border-color: #ff523d transparent transparent;
 }
 
 /*  ----------------- DROP-DOWN MENU -------------- */
@@ -384,6 +400,7 @@ h1 {
     height: 50px;
     width: 200px;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .button-icon-gap {
@@ -392,7 +409,9 @@ h1 {
 
 .first-child-buttons-area-style:hover {
     background-color: #73299a;
+    color: white;
 }
+
 
 
 .first-child-credit-area {
@@ -512,11 +531,33 @@ h1 {
     font-size: 1.5rem;
 }
 
+.tiles-icons-size {
+    height: 45px;
+    width: 45px;
+    fill: #73299a;
+    position: absolute;
+}
+
+.lower-icon {
+    position: relative;
+    height: 40px;
+    width: 35px;
+    display: inline-block;
+    fill: #72299a6a;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+
+.tiles1>h3 {
+    z-index: 3;
+}
+
 
 .p-tiles-style {
     text-align: start;
     width: 80%;
 }
+
 
 .tiles1 {
     display: flex;
@@ -528,7 +569,9 @@ h1 {
     border-radius: 1rem;
     height: 12rem;
     padding: 2rem;
+    padding-top: 1rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 
@@ -541,8 +584,10 @@ h1 {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
+    padding-top: 1rem;
     height: 12rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 .tiles3 {
@@ -554,8 +599,10 @@ h1 {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
+    padding-top: 1rem;
     height: 12rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 .tiles4 {
@@ -568,7 +615,9 @@ h1 {
     border-radius: 1rem;
     height: 12rem;
     padding: 2rem;
+    padding-top: 1rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 .tiles5 {
@@ -580,8 +629,10 @@ h1 {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
+    padding-top: 1rem;
     height: 12rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 .tiles6 {
@@ -593,8 +644,10 @@ h1 {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
+    padding-top: 1rem;
     height: 12rem;
     box-shadow: 10px 10px 10px 10px #e6e6e8;
+    gap: 1rem;
 }
 
 
@@ -638,7 +691,7 @@ h1 {
 }
 
 
-/* SECTION 3 PICTURES WITH HEADERS */
+/* --------------------------------------- SECTION 3 PICTURES WITH HEADERS */
 
 .section3-flex-container {
     display: flex;
@@ -649,7 +702,21 @@ h1 {
     background: linear-gradient(85deg, #ffffff, #8d7f95);
 }
 
+.icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #73299a;
+    width: 80px;
+    height: 80px;
+}
 
+.section-3-icons-size {
+    height: 45px;
+    width: 45px;
+    fill: white;
+}
 
 .text-img-section3-size {
     height: 60px;
@@ -700,7 +767,7 @@ h1 {
     width: 13rem;
 }
 
-/* SECTION 4 text/icons */
+/* ------------------------------------------------------- SECTION 4 text/icons */
 
 .section4-flex-container {
     display: flex;
@@ -713,6 +780,26 @@ h1 {
     height: 5rem;
 }
 
+.section4-icon-div-outside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #b3aeb5;
+}
+
+.section4-icon-div-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: #b3aeb5;
+}
 
 .inside-gap {
     display: flex;
@@ -768,12 +855,45 @@ h1 {
     width: 80%;
 }
 
-.text-flex-container-column>h3 {
+.s4-zero-icon {
+    color: #049507;
+    font-size: 30px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    box-sizing: border-box;
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+    text-align: center !important;
+    visibility: visible;
+}
+
+.s4-first-icon {
+    color: purple;
+    font-size: 30px;
+}
+
+.s4-second-icon {
+    color: #d912dc;
+    font-size: 30px;
+}
+
+.text-flex-container-column-s4 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+}
+
+.text-flex-container-column-s4>h3 {
     font-size: 1.8rem;
 }
 
-.text-flex-container-column>p {
+.text-flex-container-column-s4>p {
     width: 110%;
+    font-size: 1.1rem;
 }
 
 /* -------------------------------------- SECTION 5 one-picture/tekst */
@@ -934,6 +1054,27 @@ h1 {
     width: 100%;
 }
 
+.members-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: purple;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mebers-icon-style {
+    color: white;
+}
+
+.telephone-icon {
+    color: #cc0fda;
+    margin-right: 8px;
+}
+
 /* --------------------------  SECTION 7 FAQs */
 
 .gap-container-faqs {
@@ -1007,6 +1148,7 @@ h1 {
     border: none;
     background: transparent;
     cursor: pointer;
+
 }
 
 .showp {
@@ -1055,10 +1197,11 @@ h1 {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     background-color: #2c3e50;
-    width: 100%;
+    width: 90%;
     align-items: center;
+    padding: 1rem;
 }
 
 .white {
@@ -1066,8 +1209,38 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 60%;
+    height: 65px;
+    width: 85px;
     margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.tiles-images-top {
+    width: 45px;
+    height: 45px;
+}
+
+.white:hover {
+    background: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    ;
+}
+
+.white:hover .tiles-images-top {
+    fill: white;
+}
+
+.green-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(0deg, #00f500 1%, #00db00 53%, #00c000 100%);
+    color: white;
+    font-size: 13px;
+    box-shadow: 1px 1px 6px 6px rgb(221, 217, 217);
+    margin-right: 5px;
 }
 
 .white>img {
@@ -1122,6 +1295,46 @@ h1 {
     padding-left: 5rem;
     background-color: #73299a;
     border-radius: 1rem;
+    position: relative;
+}
+
+
+
+.background-image1 {
+    position: absolute;
+    height: 90%;
+    width: 200px;
+    top: 28px;
+    right: 13rem;
+    position: absolute;
+    background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/banner/ns.png);
+    rotate: 30deg;
+}
+
+
+.background-image2 {
+    display: flex;
+    height: 10%;
+    width: 55%;
+    position: absolute;
+    background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/banner/ns2.png);
+}
+
+.cloud1 {
+    display: flex;
+    height: 1.5rem;
+    margin-bottom: 4rem;
+    width: 7%;
+    background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/cloud-2.png);
+    position: absolute;
+}
+
+.cloud {
+    display: flex;
+    height: 3rem;
+    width: 10.9%;
+    background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/cloud-5.png);
+    position: absolute;
 }
 
 .flex-input-button {
@@ -1199,6 +1412,7 @@ h1 {
     align-items: center;
     width: 75%;
     background-color: rgb(59, 1, 44);
+
 }
 
 .column-logo-container {
@@ -1256,6 +1470,7 @@ h1 {
 
 .social-media-row {
     display: flex;
+    gap: 5px;
 }
 
 .column-logo-container>p {
@@ -1318,11 +1533,17 @@ h1 {
 
 .input-button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0;
     border: none;
     border-radius: none;
     background-color: rgb(199, 81, 192);
     width: 15%;
+}
+
+.plane-icon {
+    color: white;
 }
 
 #input-news {
@@ -1376,6 +1597,21 @@ h1 {
     flex-direction: column;
 }
 
+.media-icon-div {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+.social-media-icons-style {
+    color: #16599b;
+    display: inline-block;
+}
+
 /* -------------------------------- LAST SECTION CONTAINER*/
 
 .flex-black {
@@ -1387,6 +1623,7 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     height: 3rem;
+    gap: 1rem;
 }
 
 .flex-black>a {
