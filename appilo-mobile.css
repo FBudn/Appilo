@@ -259,6 +259,10 @@
 
     /*  ----------------- SECTION 4 -------------- */
 
+    .section4-flex-container {
+        align-items: flex-start;
+    }
+
     .inside-gap {
         display: none;
     }
@@ -272,6 +276,35 @@
     .section4-text-container {
         width: 100%;
     }
+
+    .icon-text-container {
+        width: 100%;
+    }
+
+    .column-icon-text {
+        gap: 4rem;
+    }
+
+    .text-flex-container-column-s4>h3 {
+        font-size: 1.8rem;
+        width: 150%;
+    }
+
+    .text-flex-container-column-s4>p {
+        width: 150%;
+        font-size: 1.1rem;
+    }
+
+    .icon-text-container:hover {
+        width: 130%;
+    }
+
+    .icon-text-container:hover .text-flex-container-column-s4>p {
+        width: 110%;
+        transition: none;
+    }
+
+
 
     /*  ----------------- SECTION 5 -------------- */
 
@@ -558,9 +591,13 @@
         display: none;
     }
 
+    .column-icon-text {
+        width: 100%;
+    }
+
     .section4-flex-container {
         flex-direction: column;
-        gap: 5rem;
+        gap: 0rem;
         margin-left: 0rem;
     }
 
@@ -574,8 +611,41 @@
     }
 
     .icon-text-container {
-        flex-direction: column;
         align-items: center;
+        padding: 1rem;
+    }
+
+    .section4-flex-container {
+        align-items: flex-start;
+    }
+
+
+    .text-flex-container-column-s4>h3 {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .text-flex-container-column-s4>p {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .icon-text-container:hover {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .text-flex-container-column-s4 {
+        gap: 0.5rem;
+    }
+
+    .icon-text-container:hover .text-flex-container-column-s4>p {
+        width: 100%;
+        transition: none;
+    }
+
+    .first-child-buttons-area-style {
+        width: 150px;
     }
 
     /*  ----------------- SECTION 5 -------------- */
@@ -603,7 +673,16 @@
     }
 
     /*  SECTION 6  */
+    .section6-tiles {
+        width: 25rem;
+        box-shadow: 0px 0px 4px 4px #f5f5f9;
+    }
+
     #niofar {
+        display: none;
+    }
+
+    #lifeo {
         display: none;
     }
 
@@ -621,6 +700,8 @@
     .frequently-asqed {
         width: 60%;
     }
+
+
 
     /* --------------------------  SECTION 8 prices tiles */
 
