@@ -21,6 +21,10 @@
     font-weight: bold;
 }
 
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
 
 /* GO TO TOP BUTTON */
 #myBtn {
@@ -387,6 +391,7 @@ li>a {
     display: flex;
     justify-content: flex-start;
     padding-right: 2rem;
+    z-index: 5;
 }
 
 
@@ -504,6 +509,7 @@ h1 {
     width: 200px;
     font-weight: bold;
     font-size: 1rem;
+    z-index: 10;
 }
 
 .button-icon-gap {
@@ -1141,7 +1147,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(85deg, #ffffff, #8d7f95);
+    background-color: #F0F2F7;
+
 }
 
 .section5-grid-container-in-flex {
@@ -1152,9 +1159,7 @@ h1 {
         'gap2 gap2';
 }
 
-.section5-grid-areas {
-    display: flex;
-}
+
 
 .gap1 {
     grid-area: gap1;
@@ -1166,10 +1171,6 @@ h1 {
     justify-content: flex-end;
 }
 
-.section5-text-container {
-    grid-area: text;
-    justify-content: flex-start;
-}
 
 .features {
     display: flex;
@@ -1184,10 +1185,13 @@ h1 {
 }
 
 .flex-column2 {
+    grid-area: text;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
@@ -1646,20 +1650,23 @@ h1 {
     position: absolute;
     height: 100%;
     width: 200px;
-    top: 65px;
-    right: -2rem;
+    top: 130px;
+    left: -5rem;
     position: absolute;
     background-repeat: no-repeat;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/banner/ns.png);
-    rotate: 30deg;
+    rotate: 90deg;
 }
 
 
 .background-image2 {
     display: flex;
-    height: 10%;
-    width: 55%;
+    height: 80%;
+    width: 80%;
+    left: 1rem;
+    bottom: 0;
     position: absolute;
+    background-repeat: no-repeat;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/banner/ns2.png);
 }
 
@@ -1670,6 +1677,18 @@ h1 {
     width: 7%;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/cloud-2.png);
     position: absolute;
+    animation: cloud-one 25s ease-in-out infinite;
+}
+
+@keyframes cloud-one {
+    0% {
+        left: -28%;
+    }
+
+    100% {
+        left: 105%;
+    }
+
 }
 
 .cloud {
@@ -1678,6 +1697,17 @@ h1 {
     width: 10.9%;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/cloud-5.png);
     position: absolute;
+    animation: cloud-two 20s ease-in-out infinite;
+}
+
+@keyframes cloud-two {
+    0% {
+        left: -15%;
+    }
+
+    100% {
+        left: 110%;
+    }
 }
 
 .flex-input-button {
@@ -1752,10 +1782,9 @@ h1 {
 .links-container-row {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 75%;
     background-color: rgb(59, 1, 44);
-
 }
 
 .column-logo-container {
@@ -1765,7 +1794,6 @@ h1 {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-    margin-top: 1rem;
 }
 
 .column-logo-container2 {
@@ -1799,8 +1827,9 @@ h1 {
 
 .links-newsletter-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
     justify-content: flex-start;
 }
@@ -1833,11 +1862,11 @@ h1 {
 }
 
 #hr-links1 {
-    width: 300px;
+    width: 270px;
 }
 
 #hr-links2 {
-    width: 150px;
+    width: 220px;
 }
 
 .column-logo-container2>a {
@@ -1881,8 +1910,8 @@ h1 {
     gap: 0;
     border: none;
     border-radius: none;
-    background-color: rgb(199, 81, 192);
-    width: 15%;
+    background-color: #6c2b95;
+    width: 20%;
 }
 
 .plane-icon {
@@ -1895,6 +1924,7 @@ h1 {
     height: 40px;
     width: 300px;
     padding-left: 2rem;
+    background-color: #503d63;
 }
 
 .column-logo-container3>p {
@@ -1933,6 +1963,8 @@ h1 {
 
 .section-flexx {
     display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .column-again {
