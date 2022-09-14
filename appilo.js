@@ -45,7 +45,7 @@ function topFunction() {
 
 /* FAQs buttons */
 
-const FQSbutton = document.querySelector(".button-faqs");
+const FQSbutton = document.querySelector(".header-button-flex-row");
 const pFQS = document.querySelector(".p-faqs");
 
 FQSbutton.addEventListener("click", function () {
