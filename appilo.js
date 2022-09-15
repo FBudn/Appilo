@@ -104,20 +104,31 @@ FQSbutton8.addEventListener("click", function () {
 /* scrolling animations */
 
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals =
+    document.querySelectorAll(
+      ".reveal"
+    ); /* reveals.lenght w pętli żeby robiła się nieskończoną ilość razy?*/
   for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 80;
+    var windowHeight =
+      window.innerHeight; /* window.innerHeight - wysokość widocznego obszaru */
+    var elementTop =
+      reveals[i].getBoundingClientRect()
+        .top; /* getBoundingClientRect().top; - odległość elementu od góry widocznego obszaru*/
+    /* elementTop to odległość elementu z klasą reveal od góry widocznego obszaru lub długość, która została przewinięta*/
+    var elementVisible = 80; /* odległość (w px) w której element powinien zostać odłosnięty użytkownikowi*/
+
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
       reveals[i].classList.remove("active");
     }
   }
+  /* jeśli odległość elementu z kl. reveal od góry widocznego obszaru albo długość, która została przewinięta jest mniejsza niż
+  wysokość widocznego obszaru - odległość w której element powinien zostać odsłonięty to element się pokazuje. Inaczej chowa.
+  */
 }
 
 window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
+// Aby sprawdzić pozycję przewijania podczas ładowania strony
 reveal();

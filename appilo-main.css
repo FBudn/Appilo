@@ -41,7 +41,6 @@ body {
 
 /* TRANSITIONS SCROLL */
 .reveal {
-    position: relative;
     transform: translateX(50px);
     opacity: 0;
     transition: 2s all ease;
@@ -1227,7 +1226,7 @@ h1 {
 }
 
 .text-flex-container-column-s4>p {
-    width: 110%;
+    width: 100%;
     font-size: 1.1rem;
 }
 

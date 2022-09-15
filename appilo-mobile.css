@@ -915,7 +915,13 @@
 
     @media screen and (max-width: 376px) {
 
+        .max-width {
+            max-width: 100vw;
+        }
 
+        body {
+            max-width: 100vw;
+        }
 
         .burger.active .burger-lines:first-child {
             position: absolute;
@@ -980,9 +986,91 @@
 
         .section4-text-container {
             margin-bottom: 4rem;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .p-container {
+            width: 85%;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .flex-row>h2 {
+            font-size: 30px;
+        }
+
+        .background-color {
+            width: 95vw;
+        }
+
+        .tiles1,
+        .tiles2,
+        .tiles3,
+        .tiles4,
+        .tiles5,
+        .tiles6 {
+            width: 95vw;
+        }
+
+        .section2-grid-container-child2 {
+            justify-content: flex-start;
+        }
+
+        .s4-features>h3 {
+            font-size: 30px;
+        }
+
+        .header-row-container>h3 {
+            font-size: 30px;
+        }
+
+        .header-row-container>p {
+            font-size: 35px;
+            text-align: end;
+        }
+
+        .icon-text-container {
+            width: 90%;
         }
 
 
+        .icon-text-container:hover {
+            margin-left: 0.7rem;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 8px 8px rgb(246, 241, 241);
+            background-color: white;
+            transition: 0.5s ease-out;
+        }
+
+        .text-flex-container-column-s4>h3 {
+            font-size: 25px;
+        }
+
+        .text-flex-container-column-s4 {
+            gap: 0;
+            width: 100%;
+        }
+
+        .p-tiles-style3 {
+            width: 100%;
+        }
+
+        .column-icon-text {
+            max-width: 100vw;
+        }
+
+        .flex-column2 {
+            max-width: 100vw;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-left: 2rem;
+        }
+
+        .features {
+            margin-right: 7rem;
+            width: 240px;
+        }
     }
 
     @media screen and (max-width: 321px) {
