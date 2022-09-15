@@ -581,6 +581,12 @@ h1 {
     background-clip: white;
 }
 
+.first-child-buttons-area-style:hover .fa-clipboard-list {
+    background: text;
+    -webkit-text-fill-color: white;
+    background-clip: white;
+}
+
 
 
 .first-child-credit-area {
@@ -1226,7 +1232,7 @@ h1 {
 }
 
 .text-flex-container-column-s4>p {
-    width: 100%;
+    width: 110%;
     font-size: 1.1rem;
 }
 
