@@ -7,6 +7,7 @@
 
     /*  ----------------- TOP BAR -------------- */
 
+
     .header-ul {
         position: absolute;
         right: 0;
@@ -914,6 +915,8 @@
 
     @media screen and (max-width: 376px) {
 
+
+
         .burger.active .burger-lines:first-child {
             position: absolute;
             transform: translateX(-385px);
@@ -983,6 +986,7 @@
     }
 
     @media screen and (max-width: 321px) {
+
 
         .burger.active .burger-lines:first-child {
             position: absolute;

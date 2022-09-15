@@ -24,7 +24,36 @@
 body {
     overflow: hidden;
     overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.max-width {
+    display: flex;
+    max-width: 120rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* TRANSITIONS SCROLL */
+.reveal {
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
 
 /* GO TO TOP BUTTON */
 #myBtn {
@@ -553,11 +582,6 @@ h1 {
     background-clip: white;
 }
 
-.first-child-buttons-area-style:hover .fa-clipboard-list {
-    background: text;
-    -webkit-text-fill-color: white;
-    background-clip: white;
-}
 
 
 .first-child-credit-area {
@@ -1759,7 +1783,7 @@ h1 {
 .row-picture-subscribe {
     display: flex;
     justify-content: flex-start;
-    width: 75%;
+    width: 80%;
     gap: 7rem;
     padding-left: 4rem;
     background-color: #73299a;
@@ -1911,13 +1935,14 @@ h1 {
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
+    width: 100%;
 }
 
 .links-container-row {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 75%;
+
 }
 
 .column-logo-container {
@@ -2141,6 +2166,7 @@ h1 {
 }
 
 .footer-before {
+    width: 100%;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/wp-content/themes/appilo/img/saas-classic/banner/fobg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2148,6 +2174,11 @@ h1 {
 }
 
 /* -------------------------------- LAST SECTION CONTAINER*/
+
+footer {
+    width: 100%;
+    max-width: 120rem;
+}
 
 .flex-black {
     display: flex;
