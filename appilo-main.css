@@ -2,6 +2,8 @@
 
 /*                                                                        General classes and settings */
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -325,6 +327,7 @@ li>a {
     top: -1rem;
     background-repeat: no-repeat;
     background-image: url(https://themexriver.com/appilo-theme/saas-classic/…hemes/appilo/img/saas-classic/banner/b-shape1.png);
+    overflow-x: hidden;
 }
 
 /* BACKGROUND START  */
@@ -550,6 +553,7 @@ h1 {
     font-weight: bold;
     font-size: 1rem;
     z-index: 10;
+    cursor: pointer;
 }
 
 .fa-cloud-download-alt {
@@ -1371,7 +1375,11 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    overflow-x: hidden;
+    height: 35rem;
 }
+
+
 
 .gap-container-members {
     display: flex;
@@ -1508,6 +1516,104 @@ h1 {
 .telephone-icon {
     color: #cc0fda;
     margin-right: 8px;
+}
+
+/* SLIDES SLIDES SLIDES SLIDES SLIDES */
+.flex-row-members-inside-for-slide {
+    display: flex;
+    width: 200%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: hidden;
+    height: 25rem;
+
+    position: absolute;
+    transform: translate3d(630px, 0px, 0px);
+}
+
+
+
+.slide-flex-visible {
+    display: flex;
+    width: 83%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: hidden;
+    height: 25rem;
+
+    position: absolute;
+}
+
+.members-slide-left {
+    transform: translateX(315px);
+    transition: 2s ease-out;
+}
+
+.members-slide-right {
+    transform: translateX(630px);
+    transition: 2s ease-out;
+}
+
+#mem5,
+#mem6,
+#mem7,
+#mem8 {}
+
+.members-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 74, 181);
+    width: 5%;
+    height: 1.8rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.members-nav-buttons-L {
+    border: none;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.members-nav-buttons-P {
+    border: none;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.members-nav-buttons-L:hover {
+    background-color: purple;
+}
+
+.members-nav-buttons-P:hover {
+    background-color: purple;
+}
+
+.members-nav-buttons-L:hover .fa-long-arrow-alt-left {
+    color: black;
+}
+
+.members-nav-buttons-P:hover .fa-long-arrow-alt-right {
+    color: black;
+}
+
+
+.fa-long-arrow-alt-left {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fa-long-arrow-alt-right {
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* --------------------------  SECTION 7 FAQs */

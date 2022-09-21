@@ -648,6 +648,11 @@
     /*  ----------------- TOP BAR -------------- */
 
     /*  ----------------- RESPONSIVE MENU -------------- */
+    .header-after {
+        left: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
 
 
 
@@ -914,6 +919,11 @@
     }
 
     @media screen and (max-width: 376px) {
+        .header-after {
+            left: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
 
         .max-width {
             max-width: 100vw;
